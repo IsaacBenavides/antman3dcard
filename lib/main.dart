@@ -119,7 +119,7 @@ class BackgroundImage extends StatelessWidget {
       transform: Matrix4.identity()
         ..setEntry(3, 2, 0.001)
         ..rotateX(
-          -animation!.value.clamp(0, .5).toDouble(),
+          -.5 * animation!.value,
         ),
       child: Container(
         clipBehavior: Clip.antiAlias,
